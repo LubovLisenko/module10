@@ -3,8 +3,13 @@ import java.io.Serializable;
 public class UserDto implements Serializable {
     private static long serialVersionUID = 1l;
     private String name;
-    private String age;
+    private int age;
 
+    public UserDto (String name, int age){
+        this.name = name;
+        this.age = age;
+
+    }
     public String getName() {
         return name;
     }
@@ -13,11 +18,11 @@ public class UserDto implements Serializable {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 }
